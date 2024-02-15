@@ -6,8 +6,8 @@
     ? | Dependencies:
     ! | You can manually change dependency names in the fxmanifest.lua file, but I don't recommend it as you can
     ! | mess things up if you don't know what you're doing.
-    * | NativeUILua-Reloaded (rename to NativeUILua)
-    * | Badger_Discord_API
+    * | NativeUILua-Reloaded
+    * | Badger_Discord_API (if using Discord intergration, ignore if otherwise)
 ]]--
 
 Config = {} -- Don't touch this
