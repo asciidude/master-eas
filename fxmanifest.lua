@@ -7,7 +7,8 @@ version '1.0.0'
 
 client_scripts {
     'client/*.lua',
-    '@NativeUI/NativeUI.lua'
+    '@NativeUI/NativeUI.lua',
+    '@NativeUILua_Reloaded/src/NativeUIReloaded.lua'
 }
 
 server_scripts {
