@@ -15,6 +15,5 @@ server_scripts {
 }
 
 shared_scripts {
-    'functions/*.lua',
     'config.lua'
 }
