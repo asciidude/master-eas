@@ -20,7 +20,7 @@ Proper usage is shown when the command is typed **if you have the proper permiss
     |    /eas end      | mastereas.end      |  End an EAS alert     |
     |    /eas show     | mastereas.show     |  Show an EAS alert    |
 
-    <table>
+<table>
     <thead>
         <tr>
             <th align="left">Column1</th>
