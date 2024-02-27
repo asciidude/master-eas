@@ -1,0 +1,6 @@
+RegisterNetEvent('ShowNotification')
+AddEventHandler('ShowNotification', function(string)
+    SetNotificationTextEntry("STRING")
+    AddTextComponentString(string)
+    DrawNotification(true, false)
+end)

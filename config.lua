@@ -12,13 +12,21 @@
 
 Config = {} -- Don't touch this
 
+Config.disableSupportMessage = false -- Change to "true" to disable the message printed in console with a support link
+
 -- ? | Give player permission to open menu with "mastereas.menu"
 
-Config.commandName = 'mastereas' -- The command name for the EAS configuration/start menu to be shown.
-Config.commandDescription = 'Open the MasterEAS menu' -- Description for command
+--[[
+    Subcommand meanings (+ permissions):
+    * ping (mastereas.ping): Pong! Nothing else to it
+    * menu (mastereas.menu): Open the MasterEAS menu
+    * show: Re-open active alert if any, otherwise "No active alert" is shown
+]]--
 
-Config.restrictCommand = true -- Restrict above command to `mastereas.openmenu` permission
-Config.disallowMessage = '⛔ ~r~Sorry, you are not allowed to open the MasterEAS menu.' -- Client message recieved when used but not allowed
+Config.commandName = 'eas' -- Parent command to the following subcommands: ping, menu, show
+Config.commandDescription = 'Open the MasterEAS menu' -- Description for command
+Config.disallowMessage = '⛔ ~o~Sorry, you are not allowed to use this MasterEAS function' -- Client message recieved when used but not allowed
+Config.incorrectUsageMessage = '⛔ ~o~Incorrect usage, please correct your command: ~w~/eas [ping, menu, show]' -- Client message recieved when MasterEAS has been improperly used
 
 Config.showStatus = true -- Show status at top-center of screen
 Config.statusMessage = '~r~EAS Alert Active ⚠ {alert} ⚠ {location}' -- Status message to show, {alert} = alert message, {location} = area alert is active in
