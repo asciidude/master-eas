@@ -19,6 +19,23 @@ Proper usage is shown when the command is typed **if you have the proper permiss
     |    /eas create   | mastereas.create   |  Create an EAS alert  |
     |    /eas end      | mastereas.end      |  End an EAS alert     |
     |    /eas show     | mastereas.show     |  Show an EAS alert    |
+
+    <table>
+    <thead>
+        <tr>
+            <th align="left">Column1</th>
+            <th align="center">Column1</th>
+            <th align="right">Column1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="left">Column1</td>
+            <td align="center">Column1</td>
+            <td align="right">Column1</td>
+        </tr>
+    </tbody>
+</table>
 </center>
 
 ***
