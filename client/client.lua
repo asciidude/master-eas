@@ -4,3 +4,18 @@ AddEventHandler('ShowNotification', function(string)
     AddTextComponentString(string)
     DrawNotification(true, false)
 end)
+
+RegisterNetEvent('CreateEASAlert')
+AddEventHandler('CreateEASAlert', function(args)
+
+end)
+
+RegisterNetEvent('EndEASAlert')
+AddEventHandler('CreateEASAlert', function(args)
+
+end)
+
+RegisterNetEvent('ShowEASAlert')
+AddEventHandler('CreateEASAlert', function(args)
+
+end)

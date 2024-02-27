@@ -9,13 +9,14 @@ MasterEAS was particularly designed to make Emergency Alert Systems (EAS) access
 | [Badger_Discord_API](https://github.com/JaredScar/Badger_Discord_API) | Used for Discord intergration, otherwise ignore
 
 ## Commands
-Proper usage is shown when the command is typed **if you have the proper permission**.
+* Proper usage is shown if the command is improperly typed, due to the low amount of commands these messages are configurable, but it is not recommended to change them.
+* If a command parameter has quotation marks, you are required to use them
 
-|   Command Name   |     Permission     |      Description      |
-|------------------|--------------------|-----------------------|
-|    /eas create   | mastereas.create   |  Create an EAS alert  |
-|    /eas end      | mastereas.end      |  End an EAS alert     |
-|    /eas show     | mastereas.show     |  Show an EAS alert    |
+|   Command Name   |     Permission     |      Description      | Usage |
+|------------------|--------------------|-----------------------|-------|
+|    /eas create   | mastereas.create   |  Create an EAS alert  | /eas create "[location]" "[message]" |
+|    /eas end      | mastereas.end      |  End an EAS alert     | /eas end |
+|    /eas show     | mastereas.show     |  Show an EAS alert    | /eas show |
 
 ***
 

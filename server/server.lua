@@ -60,14 +60,14 @@ RegisterCommand(Config.commandName, function(source, args, rawCommand)
         end,
         ['create'] = function() -- * mastereas.create
             if IsPlayerAceAllowed(source, 'mastereas.create') then
-                TriggerClientEvent('ShowMenu', source)
+                TriggerClientEvent('CreateEASAlert', source)
             else
                 TriggerClientEvent('ShowNotification', source, Config.disallowMessage)
             end
         end,
         ['end'] = function() -- * mastereas.end
             if IsPlayerAceAllowed(source, 'mastereas.end') then
-                TriggerClientEvent('ShowMenu', source)
+                TriggerClientEvent('EndEASAlert', source)
             else
                 TriggerClientEvent('ShowNotification', source, Config.disallowMessage)
             end
@@ -76,7 +76,7 @@ RegisterCommand(Config.commandName, function(source, args, rawCommand)
             TriggerClientEvent('ShowEASAlert', source)
         end,
         ['default'] = function()
-            TriggerClientEvent('ShowNotification', source, Config.incorrectUsageMessage)
+            TriggerClientEvent('ShowNotification', source, Config.ium_Primary)
         end
     }
 

@@ -25,7 +25,18 @@ Config.disableSupportMessage = false -- Change to "true" to disable the message 
 Config.commandName = 'eas' -- Parent command to the following subcommands: ping, menu, show
 Config.commandDescription = 'Open the MasterEAS menu' -- Description for command
 Config.disallowMessage = '⛔ ~o~Sorry, you are not allowed to use this MasterEAS function' -- Client message recieved when used but not allowed
-Config.incorrectUsageMessage = '⛔ ~o~Incorrect usage, please correct your command: ~w~/eas [create, end, show]' -- Client message recieved when MasterEAS has been improperly used
+
+-- ? | The following is incorrect usage messages with a proceeding comment with the actual command that must be typed.
+-- ? | These messages will be shown as alert boxes above the map, please keep that in mind with configuration.
+-- ! | Also, while you can configure these, I recommend against it if you plan on changing the command usage.
+-- ium_Command = Improper Usage Message for Command
+
+Config.ium_Primary = '⛔ ~o~Incorrect usage, use the following syntax: ~w~/eas [create, end, show]' -- /eas
+Config.ium_Start = '⛔ ~o~Incorrect usage, use the following syntax: ~w~/eas create "[location]" "[message]" (quotations required)' -- /eas start
+-- No usage for /eas end aside from original command
+-- No usage for /eas show aside from original command
+
+-- ^ | This is setup this way in case more commands are needed to be added in the future and for configurability's sake.
 
 Config.showStatus = true -- Show status at top-center of screen
 Config.statusMessage = '~r~EAS Alert Active ⚠ {alert} ⚠ {location}' -- Status message to show, {alert} = alert message, {location} = area alert is active in
