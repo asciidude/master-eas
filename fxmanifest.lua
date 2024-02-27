@@ -6,9 +6,7 @@ description 'MasterEAS: A standalone Emergency Alert System (EAS) plugin built f
 version '1.0.0'
 
 client_scripts {
-    'client/*.lua',
-    '@NativeUI/NativeUI.lua',
-    '@NativeUILua_Reloaded/src/NativeUIReloaded.lua'
+    'client/*.lua'
 }
 
 server_scripts {

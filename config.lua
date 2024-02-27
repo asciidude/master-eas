@@ -6,7 +6,6 @@
     ? | Dependencies:
     ! | You can manually change dependency names in the fxmanifest.lua file, but I don't recommend it as you can
     ! | mess things up if you don't know what you're doing.
-    * | NativeUILua-Reloaded
     * | Badger_Discord_API (if using Discord intergration, ignore if otherwise)
 ]]--
 
@@ -18,15 +17,15 @@ Config.disableSupportMessage = false -- Change to "true" to disable the message 
 
 --[[
     Subcommand meanings (+ permissions):
-    * ping (mastereas.ping): Pong! Nothing else to it
-    * menu (mastereas.menu): Open the MasterEAS menu
+    * create (mastereas.create): Create/replace an EAS alert. If alert is active, it will replace the alert and re-open message w/ sound
+    * end (mastereas.end): End active EAS alert
     * show: Re-open active alert if any, otherwise "No active alert" is shown
 ]]--
 
 Config.commandName = 'eas' -- Parent command to the following subcommands: ping, menu, show
 Config.commandDescription = 'Open the MasterEAS menu' -- Description for command
 Config.disallowMessage = '⛔ ~o~Sorry, you are not allowed to use this MasterEAS function' -- Client message recieved when used but not allowed
-Config.incorrectUsageMessage = '⛔ ~o~Incorrect usage, please correct your command: ~w~/eas [ping, menu, show]' -- Client message recieved when MasterEAS has been improperly used
+Config.incorrectUsageMessage = '⛔ ~o~Incorrect usage, please correct your command: ~w~/eas [create, end, show]' -- Client message recieved when MasterEAS has been improperly used
 
 Config.showStatus = true -- Show status at top-center of screen
 Config.statusMessage = '~r~EAS Alert Active ⚠ {alert} ⚠ {location}' -- Status message to show, {alert} = alert message, {location} = area alert is active in

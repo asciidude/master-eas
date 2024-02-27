@@ -58,8 +58,15 @@ RegisterCommand(Config.commandName, function(source, args, rawCommand)
                 TriggerClientEvent('ShowNotification', source, Config.disallowMessage)
             end
         end,
-        ['menu'] = function() -- * mastereas.menu
-            if IsPlayerAceAllowed(source, 'mastereas.menu') then
+        ['create'] = function() -- * mastereas.menu
+            if IsPlayerAceAllowed(source, 'mastereas.create') then
+                TriggerClientEvent('ShowMenu', source)
+            else
+                TriggerClientEvent('ShowNotification', source, Config.disallowMessage)
+            end
+        end,
+        ['end'] = function() -- * mastereas.menu
+            if IsPlayerAceAllowed(source, 'mastereas.end') then
                 TriggerClientEvent('ShowMenu', source)
             else
                 TriggerClientEvent('ShowNotification', source, Config.disallowMessage)
