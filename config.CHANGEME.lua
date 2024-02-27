@@ -25,7 +25,7 @@ Config.disableSupportMessage = false -- Change to "true" to disable the message 
 Config.commandName = 'eas' -- Parent command to the following subcommands: ping, menu, show
 Config.commandDescription = 'Open the MasterEAS menu' -- Description for command
 Config.disallowMessage = '⛔ ~o~Sorry, you are not allowed to use this MasterEAS function' -- Client message recieved when used but not allowed
-Config.incorrectUsageMessage = '⛔ ~o~Incorrect usage, please correct your command: ~w~/eas [ping, create, end, show]' -- Client message recieved when MasterEAS has been improperly used
+Config.incorrectUsageMessage = '⛔ ~o~Incorrect usage, please correct your command: ~w~/eas [create, end, show]' -- Client message recieved when MasterEAS has been improperly used
 
 Config.showStatus = true -- Show status at top-center of screen
 Config.statusMessage = '~r~EAS Alert Active ⚠ {alert} ⚠ {location}' -- Status message to show, {alert} = alert message, {location} = area alert is active in
@@ -34,3 +34,8 @@ Config.statusMessage = '~r~EAS Alert Active ⚠ {alert} ⚠ {location}' -- Statu
 Config.discordIntergration = true -- Use Discord intergration?
 Config.channelID = 000000000000000000 -- The channel ID of the alert channel
 Config.roleID = 'none' -- The alert role ID to mention, change to 'everyone' to mention everyone, or 'none' to not mention anyone
+
+-- Messages sent to Discord on starts, endings, and updates of EAS alerts, {alert} = alert message, {location} = area alert is active in, \n = new line
+Config.messageStart_Discord = ':rotating_light: **EAS Alert Created**\n:warning: {alert}\n:pushpin: {location}'
+Config.messageUpdate_Discord = ':arrows_clockwise: **EAS Alert Updated**\n:warning: {alert}\n:pushpin: {location}'
+Config.messageEnd_Discord = ':white_check_mark: **The EAS alert is now inactive, you may resume roleplay as normal.**'
