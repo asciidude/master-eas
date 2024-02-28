@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.eas_container_parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+
+.eas_container {
+    display: block;
+    margin: auto;
+    background: white;
+    width: 42rem;
+    height: 35rem;
+    border-radius: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.eas_container h1,h2,h3,p,img {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.eas_container .eas_heading {
+    border-radius: 1rem 1rem 0 0;
+    background: rgba(255, 140, 140);
+}
+
+.eas_container .eas_header {
+    color: black;
+    text-align: center;
+}
+
+.eas_container .eas_icon {
+    width: 13rem;
+    height: 10rem;
+    display: block;
+    margin: auto;
+}
+
+.eas_container .eas_location {
+    padding: 2px;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+.eas_container .eas_location #eas_location {
+    color: rgb(255, 140, 140);
+    font-weight: bolder;
+}
+
+.eas_container .eas_alert {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 27.58vh;
+
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.eas_container .eas_close {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(255, 140, 140);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.eas_container .eas_close code {
+    color: white;
+    background: black;
+    border-radius: 1rem;
+    
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
+.eas_container .eas_issuer {
+    margin-top: 0.2rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    border-radius: 5rem;
+    width: 50%;
+}
