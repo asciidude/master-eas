@@ -13,7 +13,7 @@ MasterEAS was particularly designed to make Emergency Alert Systems (EAS) access
 * If a command parameter has double quotation marks, you are required to use them, this is for processing arguments.
 * Moreover, you can actually add double quotation marks within the message itself by preceding it with a backslash.
 
-**Example command using these rules:** `/eas create "Nationwide" "Anomoly \"Apollyon\" detected at Sandy Shores and swiftly moving to Los Santos, please stay inside, lock your doors, close your blinds, and remain as quiet as possible while the SCP foundation handles this situation."`\
+**Example command using these rules:** `/eas create "Nationwide" "Anomoly \"Apollyon\" detected at Sandy Shores and swiftly moving to Los Santos, please stay inside, lock your doors, close your blinds, and remain as quiet as possible while the SCP foundation handles this situation."`
 
 | Message | Location
 | --- | --- |
