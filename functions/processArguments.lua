@@ -1,5 +1,5 @@
 --[[
-    Processes command arguments with the following rules:
+    Process command arguments with the following rules:
     * Removes any DOUBLE quotations that are in the command arguments
     * Will not remove double quotations WITH a preceding backslash (eg. "\"\"")
 ]]--
