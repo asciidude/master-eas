@@ -38,9 +38,6 @@ Config.ium_Start = '⛔ ~o~Incorrect usage, use the following syntax: ~w~/eas cr
 
 -- ^ | This is setup this way in case more commands are needed to be added in the future and for configurability's sake.
 
-Config.showStatus = true -- Show status at top-center of screen
-Config.statusMessage = '~r~EAS Alert Active ⚠ {alert} ⚠ {location}' -- Status message to show, {alert} = alert message, {location} = area alert is active in
-
 -- ? Discord Intergration is another way to notify users, and does it server-wide. It will also notify them of the EAS alert ending
 Config.discordIntergration = true -- Use Discord intergration?
 Config.channelID = 000000000000000000 -- The channel ID of the alert channel

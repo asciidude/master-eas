@@ -6,11 +6,18 @@ MasterEAS was particularly designed to make Emergency Alert Systems (EAS) access
 ## Dependencies
 | Dependency Name | Description |
 | --- | --- |
-| [Badger_Discord_API](https://github.com/JaredScar/Badger_Discord_API) | Used for Discord intergration, otherwise ignore
+| [Badger_Discord_API](https://github.com/JaredScar/Badger_Discord_API) | Used for Discord intergration, otherwise ignore |
 
 ## Commands
 * Proper usage is shown if the command is improperly typed, due to the low amount of commands these messages are configurable, but it is not recommended to change them.
-* If a command parameter has quotation marks, you are required to use them
+* If a command parameter has double quotation marks, you are required to use them, this is for processing arguments.
+* Moreover, you can actually add double quotation marks within the message itself by preceding it with a backslash.
+
+**Example command using these rules:** `/eas create "Nationwide" "Anomoly \"Apollyon\" detected at Sandy Shores and swiftly moving to Los Santos, please stay inside, lock your doors, close your blinds, and remain as quiet as possible while the SCP foundation handles this situation."`\
+
+| Message | Location
+| --- | --- |
+| Anomoly "Apollyon" detected at Sandy Shores police station, please stay inside, lock your doors, close your blinds, and remain as quiet as possible while the SCP foundation handles this situation. | Nationwide |
 
 |   Command Name   |     Permission     |      Description      | Usage |
 |------------------|--------------------|-----------------------|-------|
