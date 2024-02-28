@@ -1,6 +1,7 @@
 --[[
     Processes command arguments with the following rules:
-    * Removes any DOUBLE quotations that are in the command arguments UNLESS preceded by a backslash
+    * Removes any DOUBLE quotations that are in the command arguments
+    * Will not remove double quotations WITH a preceding backslash (eg. "\"\"")
 ]]--
 
 function processArguments(args)
