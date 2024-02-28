@@ -18,4 +18,13 @@ shared_scripts {
     'functions/**.*'
 }
 
+-- NUI
+
 ui_page 'nui/index.html'
+
+files {
+    'nui/index.html',
+    'nui/style.css',
+    'nui/script.js',
+    'nui/images/**.*',
+}
