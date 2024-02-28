@@ -32,7 +32,7 @@ Config.disallowMessage = '⛔ ~o~Sorry, you are not allowed to use this MasterEA
 -- ium_Command = Improper Usage Message for Command
 
 Config.ium_Primary = '⛔ ~o~Incorrect usage, use the following syntax: ~w~/eas [create, end, show]' -- /eas
-Config.ium_Start = '⛔ ~o~Incorrect usage, use the following syntax: ~w~/eas create "[location]" "[message]" (quotations required)' -- /eas start
+Config.ium_Create = '⛔ ~o~Incorrect usage, use the following syntax: ~w~/eas create "[location]" "[message]" (quotations required)' -- /eas create
 -- No usage for /eas end aside from original command
 -- No usage for /eas show aside from original command
 

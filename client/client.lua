@@ -8,14 +8,15 @@ end)
 RegisterNetEvent('CreateEASAlert')
 AddEventHandler('CreateEASAlert', function(args)
 
+
 end)
 
 RegisterNetEvent('EndEASAlert')
-AddEventHandler('CreateEASAlert', function(args)
+AddEventHandler('EndEASAlert', function()
 
 end)
 
 RegisterNetEvent('ShowEASAlert')
-AddEventHandler('CreateEASAlert', function(args)
+AddEventHandler('ShowEASAlert', function()
 
 end)

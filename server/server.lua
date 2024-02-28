@@ -59,8 +59,15 @@ RegisterCommand(Config.commandName, function(source, args, rawCommand)
             end
         end,
         ['create'] = function() -- * mastereas.create
-            if IsPlayerAceAllowed(source, 'mastereas.create') then
-                TriggerClientEvent('CreateEASAlert', source)
+            local processedArgs = processArguments(args)
+
+            if not processedArgs[1] or not processedArgs[2] then
+                TriggerClientEvent('ShowNotification', source, Config.ium_Create)
+                return
+            end
+
+            if not IsPlayerAceAllowed(source, 'mastereas.create') then
+                TriggerClientEvent('CreateEASAlert', -1, processedArgs)
             else
                 TriggerClientEvent('ShowNotification', source, Config.disallowMessage)
             end

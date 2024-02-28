@@ -17,3 +17,5 @@ shared_scripts {
     'config.lua',
     'functions/**.*'
 }
+
+ui_page 'nui/index.html'
